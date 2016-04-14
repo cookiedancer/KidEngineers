@@ -15,6 +15,7 @@ public class PowerSupply extends CompParts
     public void act() 
     {
         // Add your action code here.
+        clickee();
     }  
    
 }

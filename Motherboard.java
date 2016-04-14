@@ -15,7 +15,12 @@ public class Motherboard extends CompParts
     public void act() 
     {
         // Add your action code here.
-        setLocation(1003, 537);
+        if (Greenfoot.mouseDragged(this))
+        {
+            MouseInfo mi = Greenfoot.getMouseInfo();
+            setLocation(mi.getX(), mi.getY());
+        }
+       //clickee();
     }    
     
 }

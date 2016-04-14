@@ -15,5 +15,6 @@ public class Harddrive extends CompParts
     public void act() 
     {
         // Add your action code here.
+        clickee();
     }  
 }
