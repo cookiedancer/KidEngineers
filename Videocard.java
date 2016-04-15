@@ -14,12 +14,21 @@ public class Videocard extends CompParts
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
-    //public Videocard()
-    //{
-       // GreenfootImage image = getImage();
-       // image.scale(image.getWidth() - 100, image.getHeight() - 100);
-        //setImage(image);
-    }
+        if (Greenfoot.mouseDragged(this))
+        {//opening drag and drop
+            
+            World world = getWorld();
+            MouseInfo mi = Greenfoot.getMouseInfo();
+            world.removeObject(this);
+            world.addObject(this, mi.getX(), mi.getY());
+            return;
+            
+
+        }//closing drag and drop
+        if (Greenfoot.mouseClicked(this))
+        {//opening playSound
+            Greenfoot.playSound("ding.wav");
+        }//closing playSound
+}
+}
 
