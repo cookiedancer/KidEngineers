@@ -9,6 +9,7 @@ import greenfoot.*;
  */
 public class LivingRoom extends World
 {
+    GreenfootSound backgroundMusic = new GreenfootSound("Doug.mp3");
 
     /**
      * in this world we will be building a computer and learning the very basics about computer parts 
@@ -25,8 +26,14 @@ public class LivingRoom extends World
         //addObject(new Memory(),772,492);
         //addObject(new BluerayDrive(),785,579);
         //addObject(new Videocard(),652,568);
-
+        backgroundMusicstop();
         prepare();
+    }
+    public void act()
+    {
+        beginGame();
+         
+        
     }
 
     /**
@@ -47,5 +54,31 @@ public class LivingRoom extends World
         addObject(blueraydrive, 334, 127);
         Harddrive harddrive = new Harddrive();
         addObject(harddrive, 217, 139);
+        Tower tower = new Tower();
+        addObject(tower, 672, 506);
+        tower.setLocation(181, 545);
+        tower.setLocation(151, 543);
+        Processor processor = new Processor();
+        addObject(processor, 98, 148);
+        Instructions2 instructions2 = new Instructions2();
+        addObject(instructions2, 474, 52);
+        instructions2.setLocation(539, 31);
+        Instructions3 instructions3 = new Instructions3();
+        addObject(instructions3, 505, 247);
+        instructions3.setLocation(535, 225);
+    }
+
+    public void backgroundMusicstop()
+    {
+        backgroundMusic.stop();
+    }
+    void beginGame()
+    {
+        if (Greenfoot.isKeyDown("enter"))
+        {
+            Greenfoot.setWorld(new LetsBuild());
+            Greenfoot.delay(15);
+            backgroundMusic.stop();
+        }
     }
 }

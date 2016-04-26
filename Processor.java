@@ -16,4 +16,4 @@ public class Processor extends CompParts
     {
         clickee();
     }    
-}  
+}

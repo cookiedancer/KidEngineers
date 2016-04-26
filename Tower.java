@@ -16,10 +16,10 @@ public class Tower extends Actor
     {
         // Add your action code here.
     }   
-    //public Tower()
+    public Tower()
     {
-        //GreenfootImage image = getImage();
-        //image.scale(image.getWidth() - 150, image.getHeight() - 150);
-        //setImage(image);
+        GreenfootImage image = getImage();
+        image.scale(image.getWidth() + 150, image.getHeight() + 150);
+        setImage(image);
     }
 }
