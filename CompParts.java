@@ -32,34 +32,7 @@ public void clickee()
 
         }//closing drag and drop
     }   
-//private boolean isGrabbed()
-//{
-//if (Greenfoot.mousePressed(this))
-  
-//{//opening mousePressed
-   // isGrabbed = true;
-    
-    //World world = getWorld();
-   // MouseInfo mi = Greenfoot.getMouseInfo();
-   // world.removeObject(this);
-   // world.addObject(this, mi.getX(), mi.getY());
-   // return;
-//} //closing mouse press
-//drag object and make it follow the mose
-//if ((Greenfoot.mouseDragged(this)) && isGrabbed)
-//{// opening mouse drag
-    //MouseInfo mi = Greenfoot.getMouseInfo();
-    //setLocation(mi.getX(), mi.getY());
-   // return;
-//}// closing mousedrag
-// drop the actor
-//if (Greenfoot.mouseDragEnded(this) && isGrabbed)
-//{//dropitlikeitshot
-    // release the object
-   // isGrabbed = false;
-    //return;
-//}//dropitlikeitshot ending
-//}
+
 }
 
 

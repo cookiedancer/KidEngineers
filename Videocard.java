@@ -25,9 +25,9 @@ public class Videocard extends CompParts
             
 
         }//closing drag and drop
-        if (Greenfoot.mouseClicked(this))
+        //if (Greenfoot.mouseClicked(this))
         {//opening playSound
-            Greenfoot.playSound("ding.wav");
+            //Greenfoot.playSound("ding.wav");
         }//closing playSound
 }
 }
