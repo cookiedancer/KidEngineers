@@ -15,6 +15,6 @@ public class Instructions2 extends MessagesInfo
      */
     public Instructions2() 
     {
-        setImage(new GreenfootImage("Place the mouse over each part for details", 36, Color.BLACK, Color.WHITE));
+        setImage(new GreenfootImage("Hover the mouse over each part for details", 36, Color.BLUE, Color.WHITE));
     }    
 }

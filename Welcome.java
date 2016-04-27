@@ -21,8 +21,8 @@ public class Welcome extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1080, 607, 1);
         messageBoxes();
-        GreenfootImage img = new GreenfootImage("Welcome to Build A Computer 4Kids or BACK", 100, Color.WHITE, Color.BLACK);
-        img.drawImage(img, 200, 100);
+        GreenfootImage img = new GreenfootImage("Welcome to Build A Computer 4Kids or BACK", 50, Color.WHITE, Color.BLACK);
+        getBackground().drawImage(img, 100, 100);
         img = new GreenfootImage("Click Here", 100, Color.YELLOW, Color.BLACK);
         img.drawImage(img, 540, 500);
 
@@ -67,9 +67,9 @@ public class Welcome extends World
         addObject(instructions, 480, 506);
         instructions.setLocation(493, 502);
         instructions.setLocation(504, 488);
-        Title title = new Title();
-        addObject(title, 362, 107);
-        title.setLocation(526, 96);
+        //Title title = new Title();
+        //addObject(title, 362, 107);
+        //title.setLocation(526, 96);
     }
     public void stopped()
     {
