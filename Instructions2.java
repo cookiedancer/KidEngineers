@@ -2,10 +2,10 @@ import greenfoot.*;
 import java.awt.Color;
 
 /**
- * Write a description of class Instructions2 here.
+ * My name tells you what I do.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Tristan and Kevin 
+ * Version: final
  */
 public class Instructions2 extends MessagesInfo
 {

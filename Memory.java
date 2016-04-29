@@ -1,21 +1,9 @@
 import greenfoot.*;
 
 /**
- * Write a description of class Memory here.
+ * Hey there pretty lady, im memory and i act real smoothly, i do what my daddy does.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Tristan and Kevin 
+ * Version: final
  */
-public class Memory extends CompParts
-{
-    /**
-     * Act - do whatever the Memory wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act() 
-    {
-        // Add your action code here.
-        clickee();
-    }    
-    
-}
+public class Memory extends CompParts{}  

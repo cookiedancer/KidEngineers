@@ -1,10 +1,10 @@
 import greenfoot.*;
 
 /**
- * Write a description of class Tower here.
- * 
- * // Tristan and Kevin
- * //Version 1.0
+ * Im a tower, i was used as an onject in the living room, but i ended up not being needed.  my master says he has separation prob
+ * he doesnt want me to go away!
+ * Tristan and Kevin 
+ * Version: final
  */
 public class Tower extends Actor
 {
@@ -18,8 +18,8 @@ public class Tower extends Actor
     }   
     public Tower()
     {
-        GreenfootImage image = getImage();
-        image.scale(image.getWidth() + 150, image.getHeight() + 150);
-        setImage(image);
+        //GreenfootImage image = getImage();
+        //image.scale(image.getWidth() + 150, image.getHeight() + 150);
+        //setImage(image);
     }
 }

@@ -1,10 +1,10 @@
 import greenfoot.*;
 
 /**
- * Write a description of class MessagesInfo here.
- * 
- * //tristan and kevin 
- * @version (a version number or a date)
+ * i am here only to prove i was angry the day we tried to learn images.  this is how far i got.
+ * i guess i should have wrote the instructions methods in an array here. 
+ * @author Tristan and Kevin 
+ * Version: final
  */
 public class MessagesInfo extends Actor
 {

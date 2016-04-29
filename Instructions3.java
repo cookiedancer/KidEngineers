@@ -2,10 +2,10 @@ import greenfoot.*;
 import java.awt.Color;
 
 /**
- * Write a description of class Instructions3 here.
+ * i give u a message, i can be used instead of drawing an image on the world.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+* @author Tristan and Kevin 
+ * Version: final
  */
 public class Instructions3 extends MessagesInfo
 {

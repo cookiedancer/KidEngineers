@@ -3,10 +3,10 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;   
 /**
- * Write a description of class Welcome here.
+ * Welcome is what the name implies.  the player will be greeted by music from the hit show Doug as well as a dancing computer.
  * 
- * Tristan and Kevin
- * Version 4 or prototype 4
+ * Tristan and Kevin 
+ * Version 6 final
  */
 public class Welcome extends World
 {
@@ -20,20 +20,24 @@ public class Welcome extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1080, 607, 1);
-        messageBoxes();
-        GreenfootImage img = new GreenfootImage("Welcome to Build A Computer 4Kids or BACK", 50, Color.WHITE, Color.BLACK);
+        GreenfootImage main = getBackground();
+        main.setColor(Color.blue);
+        main.fill();
+        addObject(new DancingComputer(), getWidth() /2,getHeight() /2);
+        //messageBoxes();
+        GreenfootImage img = new GreenfootImage("Welcome to Build A Computer 4Kids or BACK", 50, Color.WHITE, null);
         getBackground().drawImage(img, 100, 100);
-        img = new GreenfootImage("Click Here", 100, Color.YELLOW, Color.BLACK);
-        img.drawImage(img, 540, 500);
+        img = new GreenfootImage("Click Enter to Continue", 50, Color.white, null);
+        getBackground().drawImage(img, 300, 480);
 
-        prepare();
+        //prepare();
         
     }
 
 
     public void act()
     {
-        messageBoxes();
+        //messageBoxes();
         beginGame();
          
         

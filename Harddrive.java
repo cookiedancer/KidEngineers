@@ -1,20 +1,9 @@
 import greenfoot.*;
 
 /**
- * Write a description of class Harddrive here.
+ * Im a hard drive
  * 
- * @author (your name) 
- * @version (a version number or a date)
+* Tristan and Kevin 
+ * Version: final
  */
-public class Harddrive extends CompParts
-{
-    /**
-     * Act - do whatever the Harddrive wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act() 
-    {
-        // Add your action code here.
-        clickee();
-    }  
-}
+public class Harddrive extends CompParts{}

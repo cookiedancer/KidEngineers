@@ -1,10 +1,10 @@
 import greenfoot.*;
 
 /**
- * Write a description of class CompParts here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * This is the back bone of the project.  here we defined the actions that all the important actors can do.
+ * also the framework for the text boxes is housed here.
+ * * Tristan and Kevin 
+ * Version: final
  */
 public class CompParts extends Actor
 {
@@ -13,16 +13,16 @@ public class CompParts extends Actor
 
     public void setDescription(String text)
     {
-        GreenfootImage textImage = new GreenfootImage(text, 28, null, null); // creates imagee with the given text
+        GreenfootImage textImage = new GreenfootImage(text, 28, null, null); 
         int biggerWidth = textImage.getWidth()+20;
         int biggerHeight = textImage.getHeight()+16;
-        GreenfootImage image = new GreenfootImage(biggerWidth, biggerHeight); // creates a larger image
-        image.drawRect(0, 0, image.getWidth()-1, image.getHeight()-1); // draws frame on larger image
+        GreenfootImage image = new GreenfootImage(biggerWidth, biggerHeight); 
+        image.drawRect(0, 0, image.getWidth()-1, image.getHeight()-1); 
         int drawX = (image.getWidth()-textImage.getWidth())/2;
         int drawY = (image.getHeight()-textImage.getHeight())/2;
-        image.drawImage(textImage, drawX, drawY); // draws text image on larger image
-        textbox = new Noone(); // creates the textbox actor to show the image
-        textbox.setImage(image); // gives image to textbox actor
+        image.drawImage(textImage, drawX, drawY); 
+        textbox = new Noone(); 
+        textbox.setImage(image); 
     }    
     /**
      * Act - do whatever the CompParts wants to do. This method is called whenever
@@ -32,9 +32,9 @@ public class CompParts extends Actor
 
     public void act() 
         {//opening act method
-            if (getWorld() instanceof LivingRoom && // for the Here world
-            textbox != null && // is there a textbox object to show
-            Greenfoot.mouseMoved(null) && // did the mouse move
+            if (getWorld() instanceof LivingRoom && 
+            textbox != null && 
+            Greenfoot.mouseMoved(null) && 
             mouseOn != Greenfoot.mouseMoved(this)) // is mouse changing between being on and off the actor
             {
             mouseOn = !mouseOn; // update saved state
@@ -47,12 +47,10 @@ public class CompParts extends Actor
                 getWorld().removeObject(textbox); // hide textbox
             }
         }
-            if (getWorld() instanceof LetsBuild) // for the There world
+            if (getWorld() instanceof LetsBuild) 
             {
                 if (Greenfoot.mousePressed(this)) // gets focus
                 {
-                // get location and world actor is in so it can be removed and added back in at the same place
-                // (this is undocumented behavior to have dragged object painted over others in the world)
                 int x = getX();
                 int y = getY();
                 World world = getWorld();

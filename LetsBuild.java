@@ -2,10 +2,10 @@ import greenfoot.*;
 import java.awt.Color;
 
 /**
- * Write a description of class LetsBuild here.
+ * this is where the user will drag and drop objects on the tower.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Tristan and Kevin 
+ * Version: final
  */
 public class LetsBuild extends World
 {
@@ -20,8 +20,9 @@ public class LetsBuild extends World
         super(1080, 607, 1); 
         GreenfootImage img = new GreenfootImage("Drag the parts over to the computer tower.", 25, Color.WHITE, null);
         getBackground().drawImage(img, 575, 25);
-        GreenfootImage img2 = new GreenfootImage("The tower is the case everything is stored in!", 25, Color.WHITE, null);
+        GreenfootImage img2 = new GreenfootImage("All of the parts must be place in or on the tower!", 25, Color.WHITE, null);
         getBackground().drawImage(img2, 575, 45);
+        addObject (new Timer(), 355,76);
         prepare();
     }
 

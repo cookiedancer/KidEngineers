@@ -1,10 +1,10 @@
 import greenfoot.*;
 
 /**
- * Write a description of class Processor here.
+ * Processor; i dont need an act, but left it here so i looked important.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Tristan and Kevin 
+ * Version: final
  */
 public class Processor extends CompParts
 {
@@ -12,8 +12,8 @@ public class Processor extends CompParts
      * Act - do whatever the Processor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void act() 
+    //public void act() 
     {
-        clickee();
+        //clickee();
     }    
 }
