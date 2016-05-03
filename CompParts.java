@@ -33,24 +33,25 @@ public class CompParts extends Actor
     public void act() 
         {//opening act method
             if (getWorld() instanceof LivingRoom && 
-            textbox != null && 
-            Greenfoot.mouseMoved(null) && 
-            mouseOn != Greenfoot.mouseMoved(this)) // is mouse changing between being on and off the actor
-            {
-            mouseOn = !mouseOn; // update saved state
-            if (mouseOn) // hover beginning
-            {
-                getWorld().addObject(textbox, getX(), getY()-180); // show textbox
+                textbox != null && 
+                Greenfoot.mouseMoved(null) && 
+                mouseOn != Greenfoot.mouseMoved(this)) // is mouse changing between being on and off the actor
+                {
+                    mouseOn = !mouseOn; // update saved state
+                    if (mouseOn) // hover beginning
+                    {
+                        getWorld().addObject(textbox, getX(), getY()-180); // show textbox
+                    }
+                    else // hover ending
+                    {
+                        getWorld().removeObject(textbox); // hide textbox
+                    }
             }
-            else // hover ending
-            {
-                getWorld().removeObject(textbox); // hide textbox
-            }
-        }
             if (getWorld() instanceof LetsBuild) 
-            {
+                {
                 if (Greenfoot.mousePressed(this)) // gets focus
                 {
+                Greenfoot.playSound("blip.mp3");
                 int x = getX();
                 int y = getY();
                 World world = getWorld();
@@ -62,7 +63,7 @@ public class CompParts extends Actor
                 MouseInfo mouse = Greenfoot.getMouseInfo();
                 setLocation(mouse.getX(), mouse.getY()); // keep actor with mouse
                 }
-            }
+                }
         } 
     //public void clickee()
     {    

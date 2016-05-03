@@ -19,7 +19,7 @@ public class Tower2 extends Actor
         
         if (isTouching(Memory.class) && isTouching(Videocard.class) && isTouching(Harddrive.class) && isTouching(PowerSupply.class) && isTouching(BluerayDrive.class) && isTouching(Motherboard.class) && isTouching(Processor.class)) 
         { 
-            Greenfoot.delay(20);
+            Greenfoot.delay(5);
             Greenfoot.playSound("queen.mp3");
             //getWorld().addObject(new MrClapper(), 540, 303);
             Greenfoot.delay(200);
